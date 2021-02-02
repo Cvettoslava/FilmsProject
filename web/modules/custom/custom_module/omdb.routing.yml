@@ -1,0 +1,10 @@
+hello_world:
+  path: "/omdb/{id}"
+  options:
+    parameters:
+      id:
+        type: string
+  defaults:
+    _controller: Drupal\omdb\Controller\OMDBController:omdb_search
+  requirements:
+    _permission: "access content"
